@@ -25,7 +25,7 @@ const connectedToWallet = localStorage.getItem("connectedToWallet");
 if (connectedToWallet) {
   // If connected, update button text and disable connect button
   connectButton.innerHTML = "Connected";
-  connectButton.disabled = true;
+  connectButton.disabled = true || false;
 }
 
 async function connect() {
